@@ -1,69 +1,62 @@
-# React + TypeScript + Vite
+# Projeto com React‑Redux
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Demo:** https://react-redux-six-iota.vercel.app/
 
-Currently, two official plugins are available:
+**Repositório:** https://github.com/Jenalul/react‑redux
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Visão Geral
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Este projeto é uma aplicação construída com **React**, **TypeScript** e **Vite**, com integração do **Redux** para gerenciamento global de estado. O template oferece uma base eficiente e moderna para iniciar projetos com essas tecnologias, e inclui configurações iniciais como ESLint, integração com Redux e ambiente pronto para desenvolvimento ágil com Vite (HMR).
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Funcionalidades
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+-   Setup com **React + TypeScript** powered by **Vite** para desenvolvimento rápido e leve.
+-   Integração com **Redux** para gerenciamento de estado global (assume-se estrutura Redux).
+-   Estrutura moderna com ESLint configurado para reforçar qualidade de código.
+-   Ambiente configurado para iniciar desenvolvimentos rápidos com **npm run dev** (via Vite).
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Tecnologias Utilizadas
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+-   **React** – biblioteca para construção de interfaces.
+-   **TypeScript** – tipagem estática para código mais robusto.
+-   **Vite** – bundler moderníssimo com suporte a HMR (Hot Module Replacement).
+-   **Redux / React‑Redux** – para gerenciamento de estado global.
+-   **ESLint** – linting para manter consistência e qualidade no código.
+
+---
+
+## Instalação e Execução
+
+1. **Clone o repositório**
+
+    ```bash
+    git clone https://github.com/Jenalul/react‑redux.git
+    ```
+
+2. **Entre no diretório do projeto**
+
+    ```bash
+    cd react‑redux
+    ```
+
+3. **Instale as dependências**
+
+    ```bash
+      npm install
+      # ou, se usar yarn:
+      # yarn install
+    ```
+
+4. **Execute em ambiente de desenvolvimento**
+
+    ```bash
+      npm run dev
+      # ou
+      # yarn dev
+    ```
